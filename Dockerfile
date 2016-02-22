@@ -8,7 +8,7 @@ MAINTAINER VistaTeam_AppleBugs <2555085@qq.com>
 ADD supervisor_v2ray.conf /etc/supervisor.conf.d/supervisor_v2ray.conf
 
 #RUN /tmp/v2ray_install.sh
-RUN bash <(curl -L -s https://raw.githubusercontent.com/v2ray/v2ray-core/master/release/install-release.sh)
+RUN curl -L -s https://raw.githubusercontent.com/v2ray/v2ray-core/master/release/install-release.sh|bash
 RUN mv /etc/v2ray/config.json /etc/v2ray/config.json.bak
 ADD config.json /etc/v2ray/config.json
 ADD init.sh /init.sh
