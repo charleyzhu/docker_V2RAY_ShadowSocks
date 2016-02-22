@@ -1,4 +1,4 @@
-FROM vistateam/base_system
+FROM djcash/docker_ubuntu_base_system
 
 MAINTAINER VistaTeam_AppleBugs <2555085@qq.com>
 
